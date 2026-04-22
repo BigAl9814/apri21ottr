@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Phone, Award, Heart, MapPin, ShieldCheck, CalendarCheck, UserCircle2 } from "lucide-react";
+import { Phone, Award, Heart, MapPin, ShieldCheck, CalendarCheck, UserCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { JOBBER_BOOK_URL, JOBBER_CLIENT_HUB_URL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
@@ -162,6 +162,10 @@ export default function AboutPage() {
               <Button asChild variant="hero">
                 <Link href="/contact">Book with Ottr Plumr</Link>
               </Button>
+            </div>
+            <div className="mt-4 flex flex-wrap gap-3 text-sm">
+              <Link href="/services" className="inline-flex items-center gap-1 text-primary hover:underline font-semibold"><ArrowRight className="h-3.5 w-3.5" /> View all services</Link>
+              <Link href="/service-areas" className="inline-flex items-center gap-1 text-primary hover:underline font-semibold"><ArrowRight className="h-3.5 w-3.5" /> See service areas</Link>
             </div>
           </div>
         </div>

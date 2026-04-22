@@ -38,6 +38,16 @@ export default function BlogPage() {
           </article>
         ))}
       </div>
+      <div className="mt-14 pt-10 border-t border-foreground/10 flex flex-wrap gap-6 items-center justify-between">
+        <div>
+          <p className="font-display text-lg text-primary">Looking for a specific service?</p>
+          <p className="text-sm text-foreground/70 mt-1">Browse our full range of plumbing & heating services across Niagara.</p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <Link href="/services" className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:bg-accent transition-colors">All services <ArrowRight className="h-4 w-4" /></Link>
+          <Link href="/service-areas" className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-card border-2 border-foreground/10 font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors">Service areas <ArrowRight className="h-4 w-4" /></Link>
+        </div>
+      </div>
     </div>
   );
 }

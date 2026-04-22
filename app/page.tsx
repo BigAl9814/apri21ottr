@@ -14,12 +14,12 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  { icon: Home, title: "Residential Plumbing", desc: "From dripping taps to full re-pipes — done right the first time." },
-  { icon: Building2, title: "Commercial Plumbing", desc: "Reliable service for shops, offices, and industrial sites across Niagara." },
-  { icon: Flame, title: "Heating Systems", desc: "Install, service, and repair for furnaces, boilers, and radiant heat." },
-  { icon: Droplets, title: "Water Heaters", desc: "Tank, tankless, and on-demand systems — sized and installed properly." },
-  { icon: ShieldCheck, title: "Sump Pumps", desc: "Keep your basement bone-dry with pro-grade sump pump installs." },
-  { icon: Wrench, title: "Repairs & Diagnostics", desc: "Honest assessments, fair pricing, no upsell games." },
+  { icon: Home, title: "Residential Plumbing", desc: "From dripping taps to full re-pipes — done right the first time.", slug: "residential-plumbing" },
+  { icon: Building2, title: "Commercial Plumbing", desc: "Reliable service for shops, offices, and industrial sites across Niagara.", slug: "commercial-plumbing" },
+  { icon: Flame, title: "Heating Systems", desc: "Install, service, and repair for furnaces, boilers, and radiant heat.", slug: "heating-systems" },
+  { icon: Droplets, title: "Water Heaters", desc: "Tank, tankless, and on-demand systems — sized and installed properly.", slug: "water-heaters" },
+  { icon: ShieldCheck, title: "Sump Pumps", desc: "Keep your basement bone-dry with pro-grade sump pump installs.", slug: "sump-pumps" },
+  { icon: Wrench, title: "Repairs & Diagnostics", desc: "Honest assessments, fair pricing, no upsell games.", slug: "repairs-diagnostics" },
 ];
 
 const ld = [
@@ -95,11 +95,12 @@ export default function HomePage() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s) => (
-            <article key={s.title} className="stamp-card p-6 group hover:-translate-y-1 transition-transform">
+            <Link key={s.title} href={`/services/${s.slug}`} className="stamp-card p-6 group hover:-translate-y-1 transition-transform block">
               <div className="h-12 w-12 rounded-xl bg-primary text-primary-foreground grid place-items-center mb-4 shadow-soft group-hover:bg-accent transition-colors"><s.icon className="h-6 w-6" /></div>
               <h3 className="font-display text-xl text-primary mb-1">{s.title}</h3>
               <p className="text-sm text-foreground/75">{s.desc}</p>
-            </article>
+              <span className="inline-flex items-center gap-1 mt-3 text-sm font-semibold text-accent">Learn more <ArrowRight className="h-3.5 w-3.5" /></span>
+            </Link>
           ))}
         </div>
       </section>
@@ -113,6 +114,7 @@ export default function HomePage() {
             <p className="text-foreground/80 text-base md:text-lg leading-relaxed">When you call Ottr Plumr, you reach a local technician — not a national call centre. We live in the Niagara Region, our shop is at 187 King St in Welland, and we know the housing stock here cold: century homes in St. Catharines, post-war bungalows in Welland and Port Colborne, lakeside cottages in Crystal Beach, vineyard properties in Lincoln, and new builds in Grimsby.</p>
             <p className="text-foreground/80 text-base md:text-lg leading-relaxed">That local knowledge changes how we work. We know which neighbourhoods have clay sewer laterals fighting tree roots every spring, which lakeshore streets need battery-backup sump pumps, and which 1990s subdivisions are hitting the 25-year mark on their original water heaters.</p>
             <p className="text-foreground/80 text-base md:text-lg leading-relaxed">Diagnose first, quote in writing, do the work clean. Every job warrantied. Every price upfront. Same-day service for most calls, 24/7 emergency response when something can't wait.</p>
+            <Link href="/about" className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-accent transition-colors mt-2">Meet Alex, our Red Seal owner <ArrowRight className="h-4 w-4" /></Link>
           </div>
           <aside className="stamp-card p-7 md:p-8 bg-gradient-hero">
             <p className="font-script text-2xl text-accent">What you can expect</p>
