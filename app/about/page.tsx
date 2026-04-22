@@ -160,7 +160,7 @@ export default function AboutPage() {
                 </a>
               </Button>
               <Button asChild variant="hero">
-                <Link href="/contact">Book a job with Alex</Link>
+                <Link href="/contact">Book with Ottr Plumr</Link>
               </Button>
             </div>
           </div>
