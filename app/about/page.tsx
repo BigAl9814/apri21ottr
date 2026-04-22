@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     q: "What makes Ottr Plumr different from other Niagara plumbers?",
-    a: "You get a Red Seal journeyman — not an apprentice or a technician working outside their scope. Alex quotes before he works, every time. Flat-rate pricing in writing, no hourly clock running. And he backs every job with a written warranty.",
+    a: "Every job is handled by Ottr Plumr's qualified, licensed team — trained to Red Seal standards. Honest pricing, no surprises, and every job backed by a written warranty.",
   },
 ];
 
