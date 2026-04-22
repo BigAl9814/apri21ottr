@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Phone, Award, Heart, MapPin, ShieldCheck, CalendarCheck } from "lucide-react";
+import { Phone, Award, Heart, MapPin, ShieldCheck, CalendarCheck, UserCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { JOBBER_BOOK_URL, JOBBER_CLIENT_HUB_URL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
