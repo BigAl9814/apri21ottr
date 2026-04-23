@@ -21,18 +21,51 @@ export const GOOGLE_MAPS_URL =
 
 export const REVIEWS = [
   {
-    quote:
-      "Great service by Alex. Outstanding job on the replacement of the kitchen faucet. Thank you for the care and the expertise for doing a great job. Alex was amazing and friendly.",
+    quote: "Very professional, courteous and knowledgeable. Did a great job and takes time to explain the work. Would highly recommend Alex and his company.",
+    name: "Ivan Cavric",
+  },
+  {
+    quote: "Alex came out to fix my plumbing issue (complete loss of water in house due to failing pressure tank) on short notice late in the afternoon on a Monday. He was patient, explained what was happening, provided a reasonable estimate, and did the work quickly with top quality. He also ensured he kept the work area clean and dry. I highly recommend.",
+    name: "Karl Rempel",
+  },
+  {
+    quote: "Alex has become our go to! It's been a good trustworthy experience each time!",
+    name: "Jenethan Latty",
+  },
+  {
+    quote: "I called for a quote on a sump pump and asked him to do the work the same day. I would give him a 10 out of 10 — he cleans up, he is polite and honest. I hired Alex again for another job and I am so happy I did.",
+    name: "Lyse Moreau",
+  },
+  {
+    quote: "Shout out to Alex and his assistant Alex for an excellent job completed on a timely basis. From a nightmare (replacing the complete vent stack from roof to basement) to a functioning system with all work done professionally. Should I ever require plumbing service it will be Alex at Plumr.",
+    name: "John",
+  },
+  {
+    quote: "Alex is awesome, fixed everything for a great price. Will use again and highly recommend him. Thanks!",
+    name: "King Mike",
+  },
+  {
+    quote: "Alex was amazing and came within an hour of us calling! Fixed the issue so quickly and did exactly what we needed for a clogged drain in the basement. Came prepared with a smile on his face. Prices were incredibly reasonable. Will be our go-to for ALL future plumbing issues.",
+    name: "D A",
+  },
+  {
+    quote: "We were extremely happy with the excellent service we received from Alex. My wife and I called him after hours later in the evening when we were afraid of water backing up from our drains and he went above and beyond arriving quickly.",
+    name: "Alex T",
+  },
+  {
+    quote: "Alex was easy to contact. With our leaking faucet and bath tub he diagnosed the problems and sourced the necessary parts quickly. The repairs were done and he made sure there were no further issues. Very satisfied with the work and will go to him for any other work we need done.",
+    name: "John Macpherson",
+  },
+  {
+    quote: "Great service by Alex. Outstanding job on the replacement of the kitchen faucet. Thank you for the care and the expertise for doing a great job. Alex was amazing and friendly.",
     name: "rtpom M",
   },
   {
-    quote:
-      "Prompt service and friendly manner. Worked quickly to diagnose the problem (fridge water line) which he replaced with a steel beaded line that will last and not dry out. Great response.",
+    quote: "Prompt service and friendly manner. Worked quickly to diagnose the problem (fridge water line) which he replaced with a steel beaded line that will last and not dry out. Great response.",
     name: "Donald W Hawken",
   },
   {
-    quote:
-      "He is an honest and a professional plumber. He promptly arrived to take care of our clogged sink drainage and quickly diagnosed and fixed the issue. Highly recommended.",
+    quote: "He is an honest and a professional plumber. He promptly arrived to take care of our clogged sink drainage and quickly diagnosed and fixed the issue. Highly recommended.",
     name: "Jansin Ozkur",
   },
 ];

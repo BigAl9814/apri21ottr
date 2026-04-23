@@ -120,7 +120,7 @@ export default function HomePage() {
             <p className="font-script text-2xl text-accent">What you can expect</p>
             <h3 className="font-display text-2xl text-primary mt-1 mb-5">Every Ottr Plumr call</h3>
             <ul className="space-y-3.5">
-              {["A real local technician on the phone","Clear arrival window (and a heads-up text when we're on the way)","Diagnostic first, then a written flat-rate quote","Drop cloths, clean uniforms, tidy job site","Plain-English explanation of the fix","Workmanship warrantied in writing","No upsells, no surprise charges"].map((item) => (
+              {["A real local technician on the phone","Clear arrival window (and a heads-up text when we're on the way)","Diagnostic first, then a written upfront quote","Drop cloths, clean uniforms, tidy job site","Plain-English explanation of the fix","Workmanship warrantied in writing","No upsells, no surprise charges"].map((item) => (
                 <li key={item} className="flex items-start gap-2.5">
                   <span className="mt-1 h-2 w-2 rounded-full bg-accent shrink-0" aria-hidden="true" />
                   <span className="text-foreground/85 text-sm md:text-base">{item}</span>
@@ -164,7 +164,7 @@ export default function HomePage() {
           <h2 className="font-display text-4xl md:text-5xl text-primary mt-1">Don't take our word for it</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-5">
-          {REVIEWS.map((r) => (
+          {[...REVIEWS].sort(() => Math.random() - 0.5).slice(0, 6).map((r) => (
             <article key={r.name} className="stamp-card p-7 flex flex-col">
               <Quote className="h-8 w-8 text-accent mb-3" />
               <p className="text-foreground/85 flex-1">{r.quote}</p>

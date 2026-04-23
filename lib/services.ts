@@ -42,7 +42,7 @@ export const SERVICES: Service[] = [
       "Your home's plumbing should be the last thing on your mind. When something goes sideways — a slow drain, a dripping tap, a mystery leak behind a wall — you want a real local plumber who shows up when they said they would, explains what's actually wrong in plain English, and fixes it right the first time. That's the entire reason Ottr Plumr exists.",
       "We handle every residential plumbing job across the Niagara Region: from a single faucet swap on a Saturday morning to a full re-pipe during a basement renovation. Every job, big or small, gets the same treatment — shoes off at the door, drop cloths down, tools tidy, the work explained as we go, and the mess cleaned up before we leave. You'll know what we did, why we did it, and what to watch for going forward.",
       "Our crew lives in Niagara. We know the housing stock — from century homes in St. Catharines and Niagara-on-the-Lake to post-war bungalows in Welland and Port Colborne to brand-new builds in Grimsby and Lincoln. That matters. A galvanized steel supply line in a 1940s home asks for a different game plan than a PEX manifold in a 2022 build, and we bring the right experience to both.",
-      "Most importantly: we quote before we work. Diagnostics first, then a clear flat-rate price, then your decision. No surprise pricing, no hidden line items added at the end. And if we open a wall and find something genuinely unexpected, we stop, show you, and give you a fresh quote before we touch it — you stay in control of every dollar.",
+      "Most importantly: we quote before we work. Diagnostics first, then a clear upfront price, then your decision. No surprise pricing, no hidden line items added at the end. And if we open a wall and find something genuinely unexpected, we stop, show you, and give you a fresh quote before we touch it — you stay in control of every dollar.",
     ],
     points: [
       "Leak detection & repair",
@@ -63,7 +63,7 @@ export const SERVICES: Service[] = [
       { title: "Water Quality", desc: "Whole-home filtration, softeners, and reverse-osmosis under-sink systems to handle Niagara's hard water and tannins." },
     ],
     whyUs: [
-      "Upfront, flat-rate pricing — no hourly surprises",
+      "Upfront, transparent pricing — no hidden surprises",
       "Same-day appointments when you need one",
       "Workmanship warrantied in writing",
       "Local, licensed, and insured Niagara plumbers",
@@ -77,7 +77,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Do you give quotes before starting work?",
-        a: "Always. We diagnose the issue, walk you through your options (often with a quick repair vs. replace breakdown), and provide a flat-rate quote in writing before any work begins. You authorize, then we work.",
+        a: "Always. We diagnose the issue, walk you through your options (often with a quick repair vs. replace breakdown), and provide a clear quote in writing before any work begins. You authorize, then we work.",
       },
       {
         q: "Do you handle bathroom and kitchen renovations?",
@@ -478,7 +478,7 @@ export const SERVICES: Service[] = [
       "Our diagnostic fee is flat, transparent, and credited toward the repair if you book us to do the work. You always know the cost before we arrive — no 'trip charge plus hourly plus parts plus a markup we won't explain.'",
     ],
     points: [
-      "Upfront flat-rate pricing",
+      "Upfront, transparent pricing",
       "Same-day appointments",
       "Warrantied work in writing",
       "Clean, tidy job sites",

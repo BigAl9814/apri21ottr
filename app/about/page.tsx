@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Phone, Award, Heart, MapPin, ShieldCheck, CalendarCheck, UserCircle2, ArrowRight } from "lucide-react";
+import { Phone, Award, Heart, MapPin, ShieldCheck, CalendarCheck, UserCircle2, ArrowRight, Quote, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { JOBBER_BOOK_URL, JOBBER_CLIENT_HUB_URL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { JOBBER_BOOK_URL, JOBBER_CLIENT_HUB_URL, PHONE_DISPLAY, PHONE_TEL, REVIEWS } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Ottr Plumr | Red Seal Plumber Welland & Niagara",
@@ -229,6 +229,26 @@ export default function AboutPage() {
               <h3 className="font-display text-lg text-primary mb-2">{faq.q}</h3>
               <p className="text-foreground/80 text-sm leading-relaxed">{faq.a}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* REVIEWS */}
+      <section className="container py-16">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <p className="font-script text-2xl text-accent">What customers say</p>
+          <h2 className="font-display text-4xl text-primary mt-1">Real Niagara homeowners. Real jobs.</h2>
+        </div>
+        <div className="grid md:grid-cols-3 gap-5">
+          {[...REVIEWS].sort(() => Math.random() - 0.5).slice(0, 3).map((r) => (
+            <article key={r.name} className="stamp-card p-7 flex flex-col">
+              <Quote className="h-8 w-8 text-accent mb-3" />
+              <p className="text-foreground/85 flex-1 text-sm leading-relaxed">{r.quote}</p>
+              <div className="mt-5 pt-5 border-t border-foreground/10 flex items-center justify-between">
+                <div className="font-display text-primary">{r.name}</div>
+                <div className="flex text-accent">{Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-4 w-4 fill-accent" />)}</div>
+              </div>
+            </article>
           ))}
         </div>
       </section>
