@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { SERVICES } from "@/lib/services";
 import { CITIES } from "@/lib/cities";
-import { getAllPosts } from "@/lib/posts";
+import { POSTS } from "@/lib/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://www.plumr.ca";
@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  const posts = getAllPosts().map((p) => ({
+  const posts = POSTS.map((p) => ({
     url: `${base}/blog/${p.slug}`,
     lastModified: p.publishedAt ? new Date(p.publishedAt).toISOString() : now,
     changeFrequency: "yearly" as const,
