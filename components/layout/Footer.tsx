@@ -43,7 +43,7 @@ export default function Footer() {
             <h3 className="font-display text-base mb-3">Hours</h3>
             <ul className="space-y-2 text-sm opacity-90">
               <li className="flex items-start gap-2"><Clock className="h-4 w-4 mt-0.5 shrink-0" /><div><div className="font-semibold">24 / 7 Emergency Service</div><div className="opacity-80">Always on call when you need us</div></div></li>
-              <li className="pl-6">Regular hours: Mon–Fri, 8 AM – 5 PM</li>
+              <li className="pl-6">Office hours: Mon–Fri, 8 AM – 4 PM | Emergency: 24/7</li>
               <li className="pl-6 opacity-80">After-hours rates apply on evenings &amp; weekends</li>
             </ul>
           </div>
