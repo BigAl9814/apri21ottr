@@ -1,7 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import Link from "next/link";
-import { Phone, Mail, MapPin, Clock, CalendarCheck, UserCircle2, CheckCircle2, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, CalendarCheck, UserCircle2, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { JOBBER_BOOK_URL, JOBBER_CLIENT_HUB_URL, PHONE_TEL, PHONE_DISPLAY, EMAIL, ADDRESS_LINE, GOOGLE_MAPS_URL } from "@/lib/site";
 
@@ -100,7 +99,7 @@ export default function ContactPage() {
                 <div className="font-display text-primary">Hours</div>
                 <div className="text-foreground/80">
                   <div className="font-semibold text-foreground">24/7 Emergency Service</div>
-                  Regular hours: Mon–Fri, 8 AM – 5 PM
+                  Office hours: Mon–Fri, 8 AM – 4 PM | Emergency: 24/7
                   <div className="text-foreground/60 text-xs mt-1">After-hours rates apply on evenings &amp; weekends</div>
                 </div>
               </div>
@@ -129,14 +128,10 @@ export default function ContactPage() {
           <p className="text-foreground/75 mb-6">
             Based in Welland, we dispatch to every corner of Niagara — typically within 60 minutes for emergencies. No travel fees within our service area.
           </p>
-          <div className="flex flex-wrap gap-2 justify-center text-sm mb-6">
+          <div className="flex flex-wrap gap-2 justify-center text-sm">
             {["Welland","St. Catharines","Niagara Falls","Thorold","Fort Erie","Port Colborne","Grimsby","Lincoln","Pelham","Niagara-on-the-Lake","West Lincoln","Wainfleet"].map((city) => (
               <span key={city} className="bg-card border-2 border-foreground/10 rounded-full px-3 py-1 font-semibold text-primary">{city}</span>
             ))}
-          </div>
-          <div className="flex flex-wrap gap-3 justify-center">
-            <Link href="/service-areas" className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:bg-accent transition-colors">All service areas <ArrowRight className="h-4 w-4" /></Link>
-            <Link href="/services" className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-card border-2 border-foreground/10 font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-colors">View all services <ArrowRight className="h-4 w-4" /></Link>
           </div>
         </div>
       </section>

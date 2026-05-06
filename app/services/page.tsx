@@ -6,7 +6,7 @@ import { SERVICES } from "@/lib/services";
 import { PHONE_TEL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Niagara Plumbing & Heating Services | Ottr Plumr",
+  title: { absolute: "Niagara Plumbing & Heating Services | Ottr Plumr" },
   description: "Full-service plumber & HVAC in Niagara — drain cleaning, water heater install & repair, sump pumps, leak detection, furnace & boiler service. Same-day, licensed, warrantied. Call 289-488-1007.",
   alternates: { canonical: "/services" },
 };

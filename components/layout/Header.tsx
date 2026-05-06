@@ -37,10 +37,10 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-2">
           <Button asChild variant="outline" size="default" className="hidden lg:inline-flex">
-            <a href={JOBBER_BOOK_URL} target="_blank" rel="noopener noreferrer"><CalendarCheck className="h-4 w-4" /> Book Now</a>
+            <a href={JOBBER_BOOK_URL} target="_blank" rel="noopener noreferrer nofollow"><CalendarCheck className="h-4 w-4" /> Book Now</a>
           </Button>
           <Button asChild variant="outline" size="default" className="hidden lg:inline-flex">
-            <a href={JOBBER_CLIENT_HUB_URL} target="_blank" rel="noopener noreferrer"><UserCircle className="h-4 w-4" /> Client Hub</a>
+            <a href={JOBBER_CLIENT_HUB_URL} target="_blank" rel="noopener noreferrer nofollow"><UserCircle className="h-4 w-4" /> Client Hub</a>
           </Button>
           <Button asChild variant="hero" size="default" className="hidden sm:inline-flex">
             <a href={`tel:${PHONE_TEL}`}><Phone className="h-4 w-4" /> {PHONE_DISPLAY}</a>
@@ -60,8 +60,8 @@ export default function Header() {
               </Link>
             ))}
             <div className="grid grid-cols-2 gap-2 mt-3">
-              <Button asChild variant="outline"><a href={JOBBER_BOOK_URL} target="_blank" rel="noopener noreferrer"><CalendarCheck className="h-4 w-4" /> Book</a></Button>
-              <Button asChild variant="outline"><a href={JOBBER_CLIENT_HUB_URL} target="_blank" rel="noopener noreferrer"><UserCircle className="h-4 w-4" /> Client Hub</a></Button>
+              <Button asChild variant="outline"><a href={JOBBER_BOOK_URL} target="_blank" rel="noopener noreferrer nofollow"><CalendarCheck className="h-4 w-4" /> Book</a></Button>
+              <Button asChild variant="outline"><a href={JOBBER_CLIENT_HUB_URL} target="_blank" rel="noopener noreferrer nofollow"><UserCircle className="h-4 w-4" /> Client Hub</a></Button>
               <Button asChild variant="hero" className="col-span-2"><a href={`tel:${PHONE_TEL}`}><Phone className="h-4 w-4" /> Call {PHONE_DISPLAY}</a></Button>
             </div>
           </nav>

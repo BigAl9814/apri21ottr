@@ -26,8 +26,8 @@ export default function Footer() {
                 const label = href === "/" ? "Home" : href.slice(1).split("-").map(w => w[0].toUpperCase()+w.slice(1)).join(" ");
                 return <li key={href}><Link href={href} className="hover:underline">{label}</Link></li>;
               })}
-              <li><a href={JOBBER_BOOK_URL} target="_blank" rel="noopener noreferrer" className="hover:underline inline-flex items-center gap-1"><CalendarCheck className="h-3.5 w-3.5" /> Book Now</a></li>
-              <li><a href={JOBBER_CLIENT_HUB_URL} target="_blank" rel="noopener noreferrer" className="hover:underline inline-flex items-center gap-1"><UserCircle2 className="h-3.5 w-3.5" /> Client Hub</a></li>
+              <li><a href={JOBBER_BOOK_URL} target="_blank" rel="noopener noreferrer nofollow" className="hover:underline inline-flex items-center gap-1"><CalendarCheck className="h-3.5 w-3.5" /> Book Now</a></li>
+              <li><a href={JOBBER_CLIENT_HUB_URL} target="_blank" rel="noopener noreferrer nofollow" className="hover:underline inline-flex items-center gap-1"><UserCircle2 className="h-3.5 w-3.5" /> Client Hub</a></li>
             </ul>
           </div>
           <div>
@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /><a href={`tel:${PHONE_TEL}`} className="hover:underline">{PHONE_DISPLAY}</a></li>
               <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" /><a href={`mailto:${EMAIL}`} className="hover:underline">{EMAIL}</a></li>
-              <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /><a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer" className="hover:underline">{ADDRESS_LINE}</a></li>
+              <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /><a href={GOOGLE_MAPS_URL} target="_blank" rel="noopener noreferrer nofollow" className="hover:underline">{ADDRESS_LINE}</a></li>
               <li className="flex items-start gap-2 opacity-80"><span className="h-4 w-4 shrink-0" /><span>Serving every city in the Niagara Region</span></li>
             </ul>
           </div>
@@ -43,7 +43,7 @@ export default function Footer() {
             <h3 className="font-display text-base mb-3">Hours</h3>
             <ul className="space-y-2 text-sm opacity-90">
               <li className="flex items-start gap-2"><Clock className="h-4 w-4 mt-0.5 shrink-0" /><div><div className="font-semibold">24 / 7 Emergency Service</div><div className="opacity-80">Always on call when you need us</div></div></li>
-              <li className="pl-6">Regular hours: Mon–Fri, 8 AM – 4 PM</li>
+              <li className="pl-6">Regular hours: Mon–Fri, 8 AM – 5 PM</li>
               <li className="pl-6 opacity-80">After-hours rates apply on evenings &amp; weekends</li>
             </ul>
           </div>

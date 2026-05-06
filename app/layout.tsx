@@ -12,14 +12,27 @@ export const metadata: Metadata = {
   title: { default: "Niagara Plumber & Heating | 24/7 Service | Ottr Plumr", template: "%s | Ottr Plumr" },
   description: "Licensed Niagara plumbers & HVAC techs — 24/7 emergency plumbing, drain cleaning, water heater repair, sump pumps, furnaces & boilers. Same-day service in St. Catharines, Niagara Falls & Welland. Call 289-488-1007.",
   metadataBase: new URL("https://www.plumr.ca"),
+  openGraph: {
+    type: "website",
+    siteName: "Ottr Plumr Plumbing & Heating",
+    title: "Niagara Plumber & Heating | 24/7 Service | Ottr Plumr",
+    description: "Licensed Niagara plumbers & HVAC techs — 24/7 emergency plumbing, drain cleaning, water heater repair, sump pumps, furnaces & boilers. Same-day service in St. Catharines, Niagara Falls & Welland. Call 289-488-1007.",
+    url: "https://www.plumr.ca",
+    images: [{ url: "/assets/hero-otter-plumber.webp", width: 1200, height: 630, alt: "Ottr Plumr — Niagara Region Plumbers" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Niagara Plumber & Heating | 24/7 Service | Ottr Plumr",
+    description: "Licensed Niagara plumbers & HVAC techs — 24/7 emergency plumbing, drain cleaning, water heater repair, sump pumps, furnaces & boilers.",
+    images: ["/assets/hero-otter-plumber.webp"],
+  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large", "max-video-preview": -1 } },
-  verification: { google: "" },
 };
 
 // Global LocalBusiness schema — appears on every page
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["Plumber", "LocalBusiness"],
+  "@type": "Plumber",
   "@id": "https://www.plumr.ca/#business",
   name: "Ottr Plumr Plumbing & Heating",
   alternateName: "Canalside Mechanical LTD",
@@ -48,8 +61,8 @@ const localBusinessSchema = {
     "West Lincoln", "Wainfleet",
   ].map((name) => ({ "@type": "City", name, containedInPlace: "Niagara Region, Ontario, Canada" })),
   openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:00", closes: "17:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday","Sunday"], opens: "00:00", closes: "23:59", description: "Emergency service only" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:00", closes: "16:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "00:00", closes: "23:59" },
   ],
   priceRange: "$$",
   currenciesAccepted: "CAD",

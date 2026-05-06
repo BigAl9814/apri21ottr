@@ -69,3 +69,83 @@ status = 200
 
       [context.agent-hooks-as-client-components-ff62.headers.values]
       Cache-Control = "public, max-age=31536000, immutable"
+# 301 redirects from old PLUMR URLs
+[[redirects]]
+from = "/wellandplumber"
+to = "/service-areas/welland"
+status = 301
+
+[[redirects]]
+from = "/stcatharinesplumber"
+to = "/service-areas/st-catharines"
+status = 301
+
+[[redirects]]
+from = "/niagarafallsplumber"
+to = "/service-areas/niagara-falls"
+status = 301
+
+[[redirects]]
+from = "/residential-welland"
+to = "/services/residential-plumbing/welland"
+status = 301
+
+[[redirects]]
+from = "/residential-st-catharines"
+to = "/services/residential-plumbing/st-catharines"
+status = 301
+
+[[redirects]]
+from = "/emergency-plumbing-st-catharines"
+to = "/services/emergency-plumber/st-catharines"
+status = 301
+
+[[redirects]]
+from = "/emergency-plumbing-welland"
+to = "/services/emergency-plumber/welland"
+status = 301
+
+[[redirects]]
+from = "/water-heater-service-welland"
+to = "/services/water-heaters/welland"
+status = 301
+
+[[redirects]]
+from = "/sump-pump-inspections-st-catharines"
+to = "/services/sump-pumps/st-catharines"
+status = 301
+
+[[redirects]]
+from = "/drain-cleaning-st-catharines"
+to = "/services/drain-cleaning/st-catharines"
+status = 301
+
+[[redirects]]
+from = "/commercial-plumbing-welland"
+to = "/services/commercial-plumbing/welland"
+status = 301
+
+[[redirects]]
+from = "/renovations-roughin-welland"
+to = "/services/residential-plumbing/welland"
+status = 301
+
+[[redirects]]
+from = "/renovations-roughin-st-catharines"
+to = "/services/residential-plumbing/st-catharines"
+status = 301
+
+[[redirects]]
+from = "/services/water-heater-installation-&-repair"
+to = "/services/water-heaters"
+status = 301
+
+[[redirects]]
+from = "/services/cleaning-service"
+to = "/services/drain-cleaning"
+status = 301
+
+[[redirects]]
+from = "/post/*"
+to = "/blog"
+status = 301
