@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: { slug: string; cit
   const service = getServiceBySlug(params.slug);
   const city = CITIES.find((c) => c.slug === params.city);
   if (!service || !city) return { title: "Not Found", robots: { index: false } };
-  return { title: { absolute: `${service.title} ${city.name} | 24/7 Local | Ottr Plumr` }, description: `Need ${service.title.toLowerCase()} in ${city.name}? Ottr Plumr offers same-day, licensed, warrantied service with upfront pricing. 24/7 emergency response across Niagara. Call ${PHONE_DISPLAY}.`, alternates: { canonical: `/services/${service.slug}/${city.slug}` } };
+  const desc = `Need ${service.title.toLowerCase()} in ${city.name}? Ottr Plumr offers same-day, licensed, warrantied service with upfront pricing. 24/7 emergency response across Niagara. Call ${PHONE_DISPLAY}.`; return { title: { absolute: `${service.title} ${city.name} | 24/7 Local | Ottr Plumr` }, description: desc, alternates: { canonical: `/services/${service.slug}/${city.slug}` }, openGraph: { title: `${service.title} ${city.name} | 24/7 Local | Ottr Plumr`, description: desc, url: `https://www.plumr.ca/services/${service.slug}/${city.slug}`, type: 'website' }, twitter: { title: `${service.title} ${city.name} | 24/7 Local | Ottr Plumr`, description: desc } };
 }
 
 export default function ServiceCityPage({ params }: { params: { slug: string; city: string } }) {

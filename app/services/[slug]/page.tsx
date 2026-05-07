@@ -13,7 +13,7 @@ export function generateStaticParams() { return SERVICES.map((s) => ({ slug: s.s
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const s = getServiceBySlug(params.slug);
   if (!s) return { title: "Service Not Found", robots: { index: false } };
-  return { title: { absolute: `${s.title} in Niagara | Same-Day Service | Ottr Plumr` }, description: s.metaDescription, alternates: { canonical: `/services/${s.slug}` } };
+  return { title: { absolute: `${s.title} in Niagara | Same-Day Service | Ottr Plumr` }, description: s.metaDescription, alternates: { canonical: `/services/${s.slug}` }, openGraph: { title: `${s.title} in Niagara | Same-Day Service | Ottr Plumr`, description: s.metaDescription, url: `https://www.plumr.ca/services/${s.slug}`, type: 'website' }, twitter: { title: `${s.title} in Niagara | Same-Day Service | Ottr Plumr`, description: s.metaDescription } };
 }
 
 export default function ServicePage({ params }: { params: { slug: string } }) {

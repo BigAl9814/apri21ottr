@@ -15,7 +15,7 @@ export function generateStaticParams() { return CITIES.map((c) => ({ slug: c.slu
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const city = CITIES.find((c) => c.slug === params.slug);
   if (!city) return { title: "Not Found", robots: { index: false } };
-  return { title: { absolute: `${city.name} Plumber & Heating | 24/7 Local | Ottr Plumr` }, description: `Looking for a plumber in ${city.name}? Ottr Plumr handles drain cleaning, water heater install, sump pumps, furnaces & 24/7 emergency plumbing. Same-day, licensed & local. Call 289-488-1007.`, alternates: { canonical: `/service-areas/${city.slug}` } };
+  const desc = `Looking for a plumber in ${city.name}? Ottr Plumr handles drain cleaning, water heater install, sump pumps, furnaces & 24/7 emergency plumbing. Same-day, licensed & local. Call 289-488-1007.`; return { title: { absolute: `${city.name} Plumber & Heating | 24/7 Local | Ottr Plumr` }, description: desc, alternates: { canonical: `/service-areas/${city.slug}` }, openGraph: { title: `${city.name} Plumber & Heating | 24/7 Local | Ottr Plumr`, description: desc, url: `https://www.plumr.ca/service-areas/${city.slug}`, type: 'website' }, twitter: { title: `${city.name} Plumber & Heating | 24/7 Local | Ottr Plumr`, description: desc } };
 }
 
 export default function ServiceAreaPage({ params }: { params: { slug: string } }) {
