@@ -149,3 +149,33 @@ status = 301
 from = "/post/*"
 to = "/blog"
 status = 301
+
+[[redirects]]
+from = "/pelham-fonthill-plumber"
+to = "/service-areas/pelham"
+status = 301
+
+[[redirects]]
+from = "/serviceareas"
+to = "/service-areas"
+status = 301
+
+[[redirects]]
+from = "/lincolnbeamsvillejordanvinelandplumber"
+to = "/service-areas/lincoln"
+status = 301
+
+[[redirects]]
+from = "/emergency-welland"
+to = "/services/emergency-plumber/welland"
+status = 301
+
+[[redirects]]
+from = "/post/licensed-vs-unlicensed-plumbers-what-you-need-to-know-in-the-niagara-region"
+to = "/blog"
+status = 301
+
+[[redirects]]
+from = "/blog-posts-sitemap.xml"
+to = "/sitemap.xml"
+status = 301
