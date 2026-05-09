@@ -249,8 +249,6 @@ export const POSTS: Post[] = [
       { type: "p", text: "A sectional drain machine with a root-cutting head will grind through root masses and restore flow. This is the right immediate fix for a blocked line. It won't remove all root material, and roots will regrow — typically within 1–3 years on an untreated line." },
       { type: "h3", text: "Hydro-jetting" },
       { type: "p", text: "High-pressure water jetting at 3,500–4,000 PSI scours the pipe walls and removes root matter more thoroughly than cable cutting. Combined with a foaming root inhibitor treatment, this can extend the interval between cleanings significantly." },
-      { type: "h3", text: "Trenchless lining (CIPP)" },
-      { type: "p", text: "If the pipe has structural damage — offset joints, cracked sections, or collapse — the permanent fix is cured-in-place pipe (CIPP) lining. A resin-saturated liner is pulled through the existing pipe and cured in place, creating a new seamless pipe inside the old one. No digging, no disruption to the yard. This is increasingly our recommended solution for Niagara clay laterals in poor condition." },
       { type: "h3", text: "Open-cut replacement" },
       { type: "p", text: "When the pipe is too far gone for lining — collapsed sections, severe grade issues, or Orangeburg that's turned to mush — open-cut replacement is the answer. We excavate, remove the old pipe, and install new PVC. More disruptive and more expensive, but it solves the problem permanently." },
       { type: "h2", text: "What does it cost?" },
