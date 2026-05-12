@@ -1,8 +1,8 @@
 export const JOBBER_BOOK_URL =
-  "https://clienthub.getjobber.com/booking/aadeb93f-d697-4a0d-a5f6-7f2c3ca6b9b4/";
+  "https://www.fieldr.ca/book/ottr-plumr";
 
 export const JOBBER_CLIENT_HUB_URL =
-  "https://clienthub.getjobber.com/client_hubs/e4833ce1-922c-4bca-b73d-06aca55b449b/login/new?source=share_login";
+  "https://www.fieldr.ca/portal/login";
 
 export const PHONE_DISPLAY = "289-488-1007";
 export const PHONE_TEL = "+12894881007";
