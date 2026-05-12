@@ -1,18 +1,19 @@
 "use client";
-import Script from "next/script";
+
 type Props = {
   slug: string;
   className?: string;
 };
+
 export default function FieldrIntake({ slug, className }: Props) {
   return (
     <div className={className}>
-      <div id="fieldr-intake" />
-      <Script
-        src="https://www.fieldr.ca/embed/intake.js"
-        data-slug={slug}
-        data-target="#fieldr-intake"
-        strategy="afterInteractive"
+      <iframe
+        src={`https://www.fieldr.ca/intake/${slug}`}
+        width="100%"
+        style={{ border: "none", minHeight: "600px" }}
+        title="Book a Service Request"
+        loading="lazy"
       />
     </div>
   );
