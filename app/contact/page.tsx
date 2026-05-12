@@ -1,13 +1,8 @@
 "use client";
-import { useEffect } from "react";
 import { Phone, Mail, MapPin, Clock, CalendarCheck, UserCircle2, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { JOBBER_BOOK_URL, JOBBER_CLIENT_HUB_URL, PHONE_TEL, PHONE_DISPLAY, EMAIL, ADDRESS_LINE, GOOGLE_MAPS_URL } from "@/lib/site";
 
-const JOBBER_FORM_STYLESHEET = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css";
-const JOBBER_FORM_SCRIPT = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
-const JOBBER_CLIENTHUB_ID = "e4833ce1-922c-4bca-b73d-06aca55b449b-1453871";
-const JOBBER_FORM_URL = "https://clienthub.getjobber.com/client_hubs/e4833ce1-922c-4bca-b73d-06aca55b449b/public/work_request/embedded_work_request_form?form_id=1453871";
 
 const whyContact = [
   "Free, no-obligation quotes on every job",
@@ -19,19 +14,7 @@ const whyContact = [
 ];
 
 export default function ContactPage() {
-  useEffect(() => {
-    if (!document.querySelector(`link[href="${JOBBER_FORM_STYLESHEET}"]`)) {
-      const link = document.createElement("link");
-      link.rel = "stylesheet"; link.href = JOBBER_FORM_STYLESHEET; link.media = "screen";
-      document.head.appendChild(link);
-    }
-    const script = document.createElement("script");
-    script.src = JOBBER_FORM_SCRIPT;
-    script.setAttribute("clienthub_id", JOBBER_CLIENTHUB_ID);
-    script.setAttribute("form_url", JOBBER_FORM_URL);
-    document.body.appendChild(script);
-    return () => { script.remove(); };
-  }, []);
+
 
   return (
     <div>
@@ -59,7 +42,8 @@ export default function ContactPage() {
         <div className="stamp-card p-7 md:p-10">
           <h2 className="font-display text-3xl text-primary mb-2">Request a quote</h2>
           <p className="text-foreground/70 mb-6">Tell us a bit about the job and we'll get right back to you — usually within a couple of hours during business hours.</p>
-          <div id={JOBBER_CLIENTHUB_ID} />
+          <div id="fieldr-intake" />
+          <script src="https://www.fieldr.ca/embed/intake.js" data-slug="ottr-plumr" data-target="#fieldr-intake" async />
           <noscript><p className="text-sm text-foreground/70">Please enable JavaScript to load our request form, or email <a href={`mailto:${EMAIL}`} className="underline">{EMAIL}</a>.</p></noscript>
         </div>
 
