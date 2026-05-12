@@ -1,25 +1,19 @@
 "use client";
-import { useEffect } from "react";
-
+import Script from "next/script";
 type Props = {
   slug: string;
   className?: string;
 };
-
 export default function FieldrIntake({ slug, className }: Props) {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://www.fieldr.ca/embed/intake.js";
-    script.setAttribute("data-slug", slug);
-    script.setAttribute("data-target", "#fieldr-intake");
-    script.async = true;
-    document.body.appendChild(script);
-    return () => { script.remove(); };
-  }, [slug]);
-
   return (
     <div className={className}>
       <div id="fieldr-intake" />
+      <Script
+        src="https://www.fieldr.ca/embed/intake.js"
+        data-slug={slug}
+        data-target="#fieldr-intake"
+        strategy="afterInteractive"
+      />
     </div>
   );
 }
