@@ -59,7 +59,7 @@ const localBusinessSchema = {
     "Welland", "St. Catharines", "Niagara Falls", "Thorold", "Lincoln",
     "Grimsby", "Pelham", "Fort Erie", "Port Colborne", "Niagara-on-the-Lake",
     "West Lincoln", "Wainfleet",
-  ].map((name) => ({ "@type": "City", name, containedInPlace: "Niagara Region, Ontario, Canada" })),
+  ].map((cityName) => ({ "@type": "City", name: cityName, containedInPlace: "Niagara Region, Ontario, Canada" })),
   openingHoursSpecification: [
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:00", closes: "16:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "00:00", closes: "23:59" },
