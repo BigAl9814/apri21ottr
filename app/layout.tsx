@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: { default: "Niagara Plumber & Heating | 24/7 Service | Ottr Plumr", template: "%s | Ottr Plumr" },
   description: "Licensed Niagara plumbers & HVAC techs — 24/7 emergency plumbing, drain cleaning, water heater repair, sump pumps, furnaces & boilers. Same-day service in St. Catharines, Niagara Falls & Welland. Call 289-488-1007.",
   metadataBase: new URL("https://www.plumr.ca"),
+  verification: { google: "Iu3AOZz2CkZ7tTJ_50Es7Sa-feUi-zfpi0osdH3gh2s" },
   openGraph: {
     type: "website",
     siteName: "Ottr Plumr Plumbing & Heating",
