@@ -675,12 +675,6 @@ export const SERVICES: Service[] = [
       "After Niagara recent flooding events that left hundreds of St. Catharines and Niagara-on-the-Lake homeowners dealing with sewage in their basements, backwater valve installation is one of the most common calls we get. Many homeowners do not know the valve exists until after their first flood.",
       "We install mainline backwater valves across the Niagara Region. Every installation is permitted and inspected. Many municipalities offer rebates of up to $2,800 through the Niagara Region Basement Flooding Protection Subsidy Program.",
     ],
-    highlights: [
-      { title: "Mainline Installation", desc: "One valve protects every drain in your home simultaneously." },
-      { title: "Automatic Operation", desc: "No power needed — the valve opens and closes automatically." },
-      { title: "Rebate Eligible", desc: "Up to $2,800 through the Niagara Region subsidy program." },
-      { title: "Permitted and Inspected", desc: "Required for insurance and resale documentation." },
-    ],
     whyUs: [
       "Permitted installation for insurance and resale",
       "Familiar with Niagara Region rebate paperwork",
@@ -717,12 +711,6 @@ export const SERVICES: Service[] = [
       "Ottr Plumr services all boiler types across the Niagara Region: gas boilers, oil boilers, combination boilers, and hydronic radiant heat systems. We diagnose the root cause and quote the repair in writing before any work begins.",
       "Common boiler problems we fix: no heat or hot water, pressure loss, pilot light or ignition failure, pump failures, zone valve issues, radiator not heating, kettling sounds, boiler leaking, and thermostat faults. Most repairs completed on the first visit.",
       "We also offer annual boiler servicing including heat exchanger cleaning, safety control testing, flue and venting checks, radiator bleeding, and pressure verification. For no-heat boiler emergencies call 289-488-1007 — we dispatch 24/7.",
-    ],
-    highlights: [
-      { title: "All Boiler Types", desc: "Gas, oil, combi, condensing, and hydronic radiant systems." },
-      { title: "24/7 Emergency Response", desc: "No-heat boiler emergencies dispatched around the clock." },
-      { title: "Annual Servicing", desc: "Keep your boiler running efficiently with a professional tune-up." },
-      { title: "Parts on the Truck", desc: "Most common boiler parts stocked for same-visit repairs." },
     ],
     whyUs: [
       "Licensed Red Seal plumber qualified for gas and hydronic systems",
@@ -761,12 +749,6 @@ export const SERVICES: Service[] = [
       "Heat pumps are the most efficient heating and cooling option for most Niagara homes — a single system providing both heating in winter and air conditioning in summer. Modern cold-climate heat pumps work effectively down to -25 degrees Celsius.",
       "We install and service air source heat pumps, mini-split heat pumps, and central air conditioning systems across Niagara. Whether replacing aging equipment, adding cooling to a heating-only home, or converting to a heat pump for better efficiency — we size and install the right system.",
       "Heat pump installation in Niagara qualifies for federal and provincial rebates through Canada Greener Homes and Ontario programs. We also handle AC repairs, refrigerant service, coil cleaning, and annual tune-ups for existing systems.",
-    ],
-    highlights: [
-      { title: "Heat Pump Installation", desc: "Air source and mini-split systems installed and commissioned." },
-      { title: "AC Repair and Service", desc: "All makes and models — diagnosis, repair, and annual tune-ups." },
-      { title: "Rebate Eligible", desc: "Federal and provincial rebates available for qualifying installs." },
-      { title: "Year-Round Comfort", desc: "One system handles heating and cooling across all seasons." },
     ],
     whyUs: [
       "Licensed for refrigerant handling and heat pump installation",
