@@ -673,13 +673,13 @@ export const SERVICES: Service[] = [
     longDesc: [
       "A backwater valve is a one-way gate installed on your main sewer lateral. When municipal sewers get overwhelmed during heavy rain, sewage that cannot flow forward tries to flow backward into the nearest opening — your basement floor drain, toilet, or laundry tub. A backwater valve flap closes automatically and blocks the backup entirely.",
       "After Niagara recent flooding events that left hundreds of St. Catharines and Niagara-on-the-Lake homeowners dealing with sewage in their basements, backwater valve installation is one of the most common calls we get. Many homeowners do not know the valve exists until after their first flood.",
-      "We install mainline backwater valves across the Niagara Region. Every installation is permitted and inspected. Many municipalities offer rebates of up to $2,800 through the Niagara Region Basement Flooding Protection Subsidy Program.",
+      "We install mainline backwater valves across the Niagara Region. Every installation is permitted and inspected. Several Niagara municipalities run rebate programs that can cover part or all of the cost — the City of Niagara Falls Weeping Tile Removal Assistance Program (WRAP), for example, covers eligible backwater valve installation up to $1,200 including taxes, and weeping tile disconnection with a sump pump install up to $4,000. Program names, amounts, and eligibility rules differ from city to city and funding is limited, so call us and we will help you check what your municipality currently offers before you book any work.",
     ],
     points: [
       "Mainline backwater valve installation",
       "Branch valves for individual fixtures",
       "Permitted and inspected installs",
-      "Niagara Region rebate paperwork assistance",
+      "Municipal rebate program paperwork assistance",
       "Paired sump pump and valve flood packages",
       "Sewer camera inspection to confirm existing valves",
     ],
@@ -687,13 +687,13 @@ export const SERVICES: Service[] = [
       { title: "Mainline Valve Install", desc: "One valve on your main sewer lateral protects every drain in the home at once." },
       { title: "Sewer Camera Inspection", desc: "We scope the lateral first to confirm condition, depth, and whether a valve already exists." },
       { title: "Permit and Inspection", desc: "Every install pulled with a municipal permit and inspected — required for insurance and resale." },
-      { title: "Rebate Documentation", desc: "We provide the invoices and permit records the Niagara Region subsidy program requires." },
+      { title: "Rebate Documentation", desc: "Itemized invoices on letterhead with our HST number, plus permit and inspection records — the paperwork these programs require." },
       { title: "Concrete Patch and Cleanup", desc: "Clean excavation, proper backfill, and a tidy concrete patch when the valve is in." },
       { title: "Complete Flood Package", desc: "Combine with a sump pump and battery backup for full groundwater plus sewer protection." },
     ],
     whyUs: [
       "Permitted installation for insurance and resale",
-      "Familiar with Niagara Region rebate paperwork",
+      "Familiar with municipal rebate program paperwork",
       "Mainline installs protect every fixture simultaneously",
       "Paired with sump pump installs for complete flood protection",
     ],
@@ -704,7 +704,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "Do I qualify for the Niagara Region backwater valve rebate?",
-        a: "Most Niagara homeowners qualify for up to $2,800 through the Niagara Region Basement Flooding Protection Subsidy Program. Installation must be permitted by a licensed contractor. Call 289-488-1007.",
+        a: "It depends on your city and your home. Programs are run by individual municipalities, not the Region, so names and amounts differ. In Niagara Falls, the WRAP program covers eligible backwater valve installation up to $1,200 including taxes. Common rules across these programs: the home usually has to be a detached or semi-detached property on municipal sanitary sewer, it must not already have a backwater valve, and critically you have to apply and be approved BEFORE any work starts. Permits, a licensed plumber, and a passing city inspection are required. Call 289-488-1007 and we will help you check your city before you book.",
       },
       {
         q: "Is a backwater valve the same as a sump pump?",
@@ -780,7 +780,7 @@ export const SERVICES: Service[] = [
     longDesc: [
       "Heat pumps are the most efficient heating and cooling option for most Niagara homes — a single system providing both heating in winter and air conditioning in summer. Modern cold-climate heat pumps work effectively down to -25 degrees Celsius.",
       "We install and service air source heat pumps, mini-split heat pumps, and central air conditioning systems across Niagara. Whether replacing aging equipment, adding cooling to a heating-only home, or converting to a heat pump for better efficiency — we size and install the right system.",
-      "Heat pump installation in Niagara qualifies for federal and provincial rebates through Canada Greener Homes and Ontario programs. We also handle AC repairs, refrigerant service, coil cleaning, and annual tune-ups for existing systems.",
+      "Some heat pump installations qualify for federal or provincial efficiency rebates. These programs open, close, and change amounts regularly, so we check what is actually available at the time you are quoting rather than promising a number. We also handle AC repairs, refrigerant service, coil cleaning, and annual tune-ups for existing systems.",
     ],
     points: [
       "Cold-climate air source heat pump installation",
@@ -795,13 +795,13 @@ export const SERVICES: Service[] = [
       { title: "Heat Pump Installation", desc: "Air source and ductless mini-split systems installed, charged, and commissioned properly." },
       { title: "Central AC Install", desc: "Add cooling to an existing forced-air furnace with a matched coil and outdoor condenser." },
       { title: "AC Diagnosis and Repair", desc: "Low refrigerant, failed capacitors, dirty coils, and metering device faults — all makes and models." },
-      { title: "Rebate Guidance", desc: "We walk you through Canada Greener Homes and Ontario rebate eligibility before you commit." },
+      { title: "Rebate Guidance", desc: "We check which efficiency programs are actually open and what you qualify for before you commit." },
       { title: "Annual Tune-Ups", desc: "Coil cleaning, refrigerant check, and electrical testing before cooling season starts." },
     ],
     whyUs: [
       "Licensed for refrigerant handling and heat pump installation",
       "Proper heat load calculation before sizing any system",
-      "Familiar with Greener Homes and Ontario rebate programs",
+      "We check current federal and provincial rebate programs at quote time",
       "Mini-split and ducted systems installed",
       "AC repairs and annual tune-ups across Niagara",
     ],
