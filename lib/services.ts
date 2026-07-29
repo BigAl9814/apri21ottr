@@ -1,4 +1,4 @@
-import { Building2, Droplets, Flame, Home as HomeIcon, ShieldCheck, Siren, Wrench, type LucideIcon } from "lucide-react";
+import { Building2, Droplets, Flame, Home as HomeIcon, ShieldCheck, Siren, Wrench, Wind, Waves, Thermometer, type LucideIcon } from "lucide-react";
 
 export type ProsConsItem = {
   name: string;
@@ -659,6 +659,138 @@ export const SERVICES: Service[] = [
       {
         q: "What counts as a real plumbing emergency?",
         a: "Active leaks you can't shut off, burst pipes, sewage backing up into the home, no water at all, no hot water in winter, no heat in winter, and any plumbing issue actively causing property damage. If you're unsure, call us — we'll help you decide whether it can wait until morning.",
+      },
+    ],
+  },
+
+  {
+    slug: "backwater-valve",
+    icon: Waves,
+    title: "Backwater Valve Installation",
+    shortDesc: "Protect your basement from sewer backup. Backwater valves are the single most effective flood protection upgrade for Niagara homes.",
+    metaDescription: "Backwater valve installation in Welland, St. Catharines, Niagara Falls & all of Niagara. Protect your basement from sewer backup. Licensed, permitted install. Call 289-488-1007.",
+    hero: "One valve. One installation. Never flood from a sewer backup again.",
+    longDesc: [
+      "A backwater valve is a one-way gate installed on your main sewer lateral. When municipal sewers get overwhelmed during heavy rain, sewage that cannot flow forward tries to flow backward into the nearest opening — your basement floor drain, toilet, or laundry tub. A backwater valve flap closes automatically and blocks the backup entirely.",
+      "After Niagara recent flooding events that left hundreds of St. Catharines and Niagara-on-the-Lake homeowners dealing with sewage in their basements, backwater valve installation is one of the most common calls we get. Many homeowners do not know the valve exists until after their first flood.",
+      "We install mainline backwater valves across the Niagara Region. Every installation is permitted and inspected. Many municipalities offer rebates of up to $2,800 through the Niagara Region Basement Flooding Protection Subsidy Program.",
+    ],
+    highlights: [
+      { title: "Mainline Installation", desc: "One valve protects every drain in your home simultaneously." },
+      { title: "Automatic Operation", desc: "No power needed — the valve opens and closes automatically." },
+      { title: "Rebate Eligible", desc: "Up to $2,800 through the Niagara Region subsidy program." },
+      { title: "Permitted and Inspected", desc: "Required for insurance and resale documentation." },
+    ],
+    whyUs: [
+      "Permitted installation for insurance and resale",
+      "Familiar with Niagara Region rebate paperwork",
+      "Mainline installs protect every fixture simultaneously",
+      "Paired with sump pump installs for complete flood protection",
+    ],
+    faqs: [
+      {
+        q: "What is a backwater valve?",
+        a: "A one-way valve on your main sewer line that blocks sewage from backing up into your home during municipal sewer overflows. When the backup clears, the valve opens and drains work normally.",
+      },
+      {
+        q: "Do I qualify for the Niagara Region backwater valve rebate?",
+        a: "Most Niagara homeowners qualify for up to $2,800 through the Niagara Region Basement Flooding Protection Subsidy Program. Installation must be permitted by a licensed contractor. Call 289-488-1007.",
+      },
+      {
+        q: "Is a backwater valve the same as a sump pump?",
+        a: "No. A backwater valve stops sewer backup from the municipal system. A sump pump removes groundwater seeping through the foundation. For complete protection, most Niagara homes benefit from both.",
+      },
+      {
+        q: "How long does installation take?",
+        a: "Most installs take 4-6 hours. We excavate a small floor section, install the valve, and patch the concrete. Drains are back in service the same day.",
+      },
+    ],
+  },
+  {
+    slug: "boiler-repair",
+    icon: Thermometer,
+    title: "Boiler Repair and Service",
+    shortDesc: "Boiler not heating? Leaking? Making noise? We diagnose and repair all boiler types across the Niagara Region.",
+    metaDescription: "Boiler repair in Welland, St. Catharines, Niagara Falls and all of Niagara. Gas, oil and combi boilers serviced by licensed Red Seal plumbers. 24/7 emergency. Call 289-488-1007.",
+    hero: "Boiler down? We know hydronic heating inside out.",
+    longDesc: [
+      "Ottr Plumr services all boiler types across the Niagara Region: gas boilers, oil boilers, combination boilers, and hydronic radiant heat systems. We diagnose the root cause and quote the repair in writing before any work begins.",
+      "Common boiler problems we fix: no heat or hot water, pressure loss, pilot light or ignition failure, pump failures, zone valve issues, radiator not heating, kettling sounds, boiler leaking, and thermostat faults. Most repairs completed on the first visit.",
+      "We also offer annual boiler servicing including heat exchanger cleaning, safety control testing, flue and venting checks, radiator bleeding, and pressure verification. For no-heat boiler emergencies call 289-488-1007 — we dispatch 24/7.",
+    ],
+    highlights: [
+      { title: "All Boiler Types", desc: "Gas, oil, combi, condensing, and hydronic radiant systems." },
+      { title: "24/7 Emergency Response", desc: "No-heat boiler emergencies dispatched around the clock." },
+      { title: "Annual Servicing", desc: "Keep your boiler running efficiently with a professional tune-up." },
+      { title: "Parts on the Truck", desc: "Most common boiler parts stocked for same-visit repairs." },
+    ],
+    whyUs: [
+      "Licensed Red Seal plumber qualified for gas and hydronic systems",
+      "24/7 emergency boiler repair across Niagara",
+      "Diagnosis first, quote in writing before any work",
+      "Annual service plans available",
+      "All boiler makes and models serviced",
+    ],
+    faqs: [
+      {
+        q: "Why is my boiler losing pressure?",
+        a: "Usually caused by a leak in the system, a faulty pressure relief valve, or air in the system. We diagnose the source and fix the underlying cause — not just refill the pressure.",
+      },
+      {
+        q: "Why is my boiler making a banging noise?",
+        a: "That sound called kettling is usually limescale or sludge on the heat exchanger. Common in Niagara hard water. A power flush usually resolves it.",
+      },
+      {
+        q: "Do you service oil boilers?",
+        a: "Yes — we service both gas and oil boilers across Niagara including burner cleaning, nozzle replacement, and heat exchanger checks.",
+      },
+      {
+        q: "Can you repair a boiler for emergency heat at night?",
+        a: "Yes — 289-488-1007 is staffed 24/7. We carry common ignition components, pumps, and zone valves on the truck for same-visit repairs.",
+      },
+    ],
+  },
+  {
+    slug: "heat-pumps-ac",
+    icon: Wind,
+    title: "Heat Pumps and Air Conditioning",
+    shortDesc: "Heat pump installation, AC service, and cooling system repair across the Niagara Region. One system, all seasons.",
+    metaDescription: "Heat pump installation and AC repair in Welland, St. Catharines, Niagara Falls, Fort Erie, Pelham and all of Niagara. Licensed install, upfront pricing. Call 289-488-1007.",
+    hero: "One system. Heat in winter, cool in summer. Done right.",
+    longDesc: [
+      "Heat pumps are the most efficient heating and cooling option for most Niagara homes — a single system providing both heating in winter and air conditioning in summer. Modern cold-climate heat pumps work effectively down to -25 degrees Celsius.",
+      "We install and service air source heat pumps, mini-split heat pumps, and central air conditioning systems across Niagara. Whether replacing aging equipment, adding cooling to a heating-only home, or converting to a heat pump for better efficiency — we size and install the right system.",
+      "Heat pump installation in Niagara qualifies for federal and provincial rebates through Canada Greener Homes and Ontario programs. We also handle AC repairs, refrigerant service, coil cleaning, and annual tune-ups for existing systems.",
+    ],
+    highlights: [
+      { title: "Heat Pump Installation", desc: "Air source and mini-split systems installed and commissioned." },
+      { title: "AC Repair and Service", desc: "All makes and models — diagnosis, repair, and annual tune-ups." },
+      { title: "Rebate Eligible", desc: "Federal and provincial rebates available for qualifying installs." },
+      { title: "Year-Round Comfort", desc: "One system handles heating and cooling across all seasons." },
+    ],
+    whyUs: [
+      "Licensed for refrigerant handling and heat pump installation",
+      "Proper heat load calculation before sizing any system",
+      "Familiar with Greener Homes and Ontario rebate programs",
+      "Mini-split and ducted systems installed",
+      "AC repairs and annual tune-ups across Niagara",
+    ],
+    faqs: [
+      {
+        q: "Are heat pumps worth it in Niagara climate?",
+        a: "Yes — modern cold-climate heat pumps work to -25 Celsius and are 2-3x more efficient than electric baseboard. Many homeowners pair a heat pump with gas furnace backup for the coldest nights.",
+      },
+      {
+        q: "What rebates are available for heat pump installation in Ontario?",
+        a: "Canada Greener Homes offers up to $5,000 for qualifying installations. Ontario also has the Home Efficiency Rebate Plus program. Call 289-488-1007 to find out what you qualify for.",
+      },
+      {
+        q: "Can you add AC to a home that only has a furnace?",
+        a: "Yes — we add central air to most forced-air furnace systems. For homes without ductwork, a mini-split heat pump provides both heating and cooling without duct installation.",
+      },
+      {
+        q: "How often should AC be serviced?",
+        a: "Once a year before cooling season — typically April or May. Includes coil cleaning, refrigerant check, and electrical component testing.",
       },
     ],
   },

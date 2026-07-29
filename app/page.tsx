@@ -20,6 +20,9 @@ const services = [
   { icon: Droplets, title: "Water Heaters", desc: "Tank, tankless, and on-demand systems — sized and installed properly.", slug: "water-heaters" },
   { icon: ShieldCheck, title: "Sump Pumps", desc: "Keep your basement bone-dry with pro-grade sump pump installs.", slug: "sump-pumps" },
   { icon: Wrench, title: "Repairs & Diagnostics", desc: "Honest assessments, fair pricing, no upsell games.", slug: "repairs-diagnostics" },
+  { icon: Waves, title: "Backwater Valves", desc: "Stop sewer backup before it starts. Rebates up to $2,800 available.", slug: "backwater-valve" },
+  { icon: Thermometer, title: "Boiler Repair & Service", desc: "All boiler types serviced — gas, oil, combi, and hydronic systems.", slug: "boiler-repair" },
+  { icon: Wind, title: "Heat Pumps & AC", desc: "Year-round comfort. Heat pump installation and AC repair across Niagara.", slug: "heat-pumps-ac" },
 ];
 
 const ld = [
